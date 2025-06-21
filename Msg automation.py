@@ -8,7 +8,7 @@ from email.mime.text import MIMEText
 
 Gmail_user = input("Gmail User:")
 print("prompting for app specific password")
-GMAIL_PASSWORD = input("App Specific password:")
+GMAIL_PASSWORD = getpass.getpass("App Specific password:")
 
 msg = MIMEMultipart('mixed')
 msg["From"] = Gmail_user
